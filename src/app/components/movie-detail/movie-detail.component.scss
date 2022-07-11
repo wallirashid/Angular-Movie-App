@@ -1,0 +1,15 @@
+.movie-stat{
+    display: flex;
+    .label{
+        width:150px;
+    }
+    .stat{
+        color:#ffb42b;
+        line-height: 24px;
+    }
+}
+.video-detail-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

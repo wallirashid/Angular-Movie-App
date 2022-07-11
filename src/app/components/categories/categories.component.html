@@ -1,0 +1,10 @@
+<section class="categories-container">
+    <h3>Movies Categories</h3>
+    <div class="grid">
+        <div class="col-6 md:col-4 lg:col-2" *ngFor="let category of categoriesList">
+            <div class="category-col">
+                <a [routerLink]="'/movies/categories/'+category.id">{{category.name}}</a>
+            </div>
+        </div>
+    </div>
+</section>

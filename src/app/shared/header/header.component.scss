@@ -1,0 +1,22 @@
+@import "../../../styles/vars";
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background:$bgColor;
+    align-items: center;
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        li{
+            padding:0px 10px;
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}

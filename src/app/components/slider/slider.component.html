@@ -1,0 +1,23 @@
+<section class="slider-wrapper">
+    <ng-container *ngFor="let movie of movies; let i=index">
+    <div class="slider-inner-box" *ngIf="i == currentSliderIndex"  @fade>
+        <div class="slider-image">
+
+            <img src="{{'https://image.tmdb.org/t/p/original/'+movie.backdrop_path}}"
+            style="width: 100%; filter: brightness(0.6); object-fit: cover;">
+
+            <!-- <img src="https://image.tmdb.org/t/p/original/lNyLSOKMMeUPr1RsL4KcRuIXwHt.jpg"
+                style="width: 100%; height: 80vh;   filter: brightness(0.6); object-fit: cover;"> -->
+        </div>
+        <div class="slider-content">
+            <h1> {{ movie.title }}</h1>
+            <ul>
+                <li><span class="material-icons">star</span><span>{{movie.vote_average}} /10 |</span></li>
+                <li>{{movie.vote_count}}&nbsp;<span>Reviews |</span></li>
+                <li>2022</li>
+            </ul>
+            <p>{{ movie.overview }}</p>
+        </div>
+    </div>
+    </ng-container>
+</section>

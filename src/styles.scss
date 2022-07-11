@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "styles/_vars.scss";
+@import "~primeflex/primeflex.css";
+@import "~normalize.css/normalize.css";
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/arya-orange/theme.css";
+.pagination-wrapper{
+    .p-paginator{
+        background: transparent;
+    }
+    .p-tabview-nav{
+        justify-content: center;
+    }
+}
+.tab-view{
+    .p-tabview-nav{
+        justify-content: center;
+    }
+    .p-tabview-nav-link{
+        background: transparent!important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .movie-detail{
+        .slider-wrapper{
+            height:auto!important;
+            .slider-inner-box{
+                position: static!important;
+                height:auto!important;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,11 @@
+<section class="item-detail" *ngIf="itemData">
+    <a class="movie-detail-item" [routerLink]="['/movie',itemData.id]">
+        <div class="item-image">
+            <img [src]="imageSize.medium + itemData.poster_path" alt="Film Image">
+        </div>
+        <div class="movie-item-content">
+            <h4>{{itemData.title}}</h4>
+        </div>
+
+    </a>
+</section>
